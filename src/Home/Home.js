@@ -19,10 +19,10 @@ const Home = () => {
           {/* Short Description */}
           <Typography variant="body1" className="description-text">
             Throughout our history, women have been the silent, architects of societal change. Whether they carried a voice or not, they have been instrumental in shaping
-            the narratives of our past and of our country. Womens' lives, experiences, and memories have enriched our understanding of history, providing depth and perspective
+            the narratives of our past and our country. Women's lives, experiences, and memories have enriched our understanding of history, providing depth and perspective
             that is often overlooked. As a collective, it is our shared responsibility to reflect on their stories, and to celebrate the role they have played throughout the 
-            fabric of time. "Her Power, Her Past", a blog dedicated to exploring American womens history, aims to study these hidden stories and uncover the truths about womens' 
-            past. And as we discuss their triumphs and their troubles, we hope to build a community that joins on this journey of exploring their power and their past, acknowledging
+            fabric of time. "Her Power, Her Past", a blog dedicated to exploring American women's history, aims to study these hidden stories and uncover the truths about women's 
+            past. As we discuss their trials and triumphs, we hope to build a community that joins us on this journey of exploring their power and their past, acknowledging
             their lasting impact on our present. 
           </Typography>
         </Box>
