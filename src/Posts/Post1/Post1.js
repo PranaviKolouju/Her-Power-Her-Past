@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Box, Container } from '@mui/material';
+import { Typography, Box, Container} from '@mui/material';
 import Navbar from '../../Components/Navbar';
 import './Post1.css';
 
