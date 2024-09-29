@@ -34,7 +34,7 @@ const Blogs = () => {
                 </Grid>
                 <Grid item xs={12} sm={8}>
                   <Typography variant="h5" gutterBottom>
-                    <Link href={post.link} color="inherit" className="blog-link">
+                    <Link href={post.link} color="inherit" className="blog-link" sx={{ textDecoration: 'none'}}>
                       {post.title}
                     </Link>
                   </Typography>
