@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url('/Users/pranavikolouju/Documents/American Women/american-women-blog/src/Images/background.png'); 
+  background-image: url('../Images/background.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
