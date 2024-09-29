@@ -9,9 +9,9 @@ const Blogs = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Title",
-      summary: "Description.",
-      link: "/blogs/the-impact-of-women-in-technology",
+      title: "Her Ties To Motherhood",
+      summary: "The lives of enslaved women rewritten in the frame of motherhood.",
+      link: "/post/1",
       imageUrl: slaveryImage
     }
   ];
