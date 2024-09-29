@@ -9,9 +9,9 @@ const Blogs = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Title",
-      summary: "Description.",
-      link: "/blogs/the-impact-of-women-in-technology",
+      title: "Her Ties To Motherhood",
+      summary: "The lives of enslaved women rewritten in the frame of motherhood.",
+      link: "/post/1",
       imageUrl: slaveryImage
     }
   ];
@@ -34,7 +34,7 @@ const Blogs = () => {
                 </Grid>
                 <Grid item xs={12} sm={8}>
                   <Typography variant="h5" gutterBottom>
-                    <Link href={post.link} color="inherit" className="blog-link">
+                    <Link href={post.link} color="inherit" className="blog-link" sx={{ textDecoration: 'none'}}>
                       {post.title}
                     </Link>
                   </Typography>
