@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Her-Power-Her-Past/static/css/main.105ee67f.css",
-    "main.js": "/Her-Power-Her-Past/static/js/main.15c3fc2b.js",
+    "main.js": "/Her-Power-Her-Past/static/js/main.b4a7e795.js",
     "static/js/453.9b9b2bac.chunk.js": "/Her-Power-Her-Past/static/js/453.9b9b2bac.chunk.js",
     "static/media/background.png": "/Her-Power-Her-Past/static/media/background.c362d8bde6691907e488.png",
     "static/media/slavery.png": "/Her-Power-Her-Past/static/media/slavery.e4e99a18309edb21d0f1.png",
     "index.html": "/Her-Power-Her-Past/index.html",
     "main.105ee67f.css.map": "/Her-Power-Her-Past/static/css/main.105ee67f.css.map",
-    "main.15c3fc2b.js.map": "/Her-Power-Her-Past/static/js/main.15c3fc2b.js.map",
+    "main.b4a7e795.js.map": "/Her-Power-Her-Past/static/js/main.b4a7e795.js.map",
     "453.9b9b2bac.chunk.js.map": "/Her-Power-Her-Past/static/js/453.9b9b2bac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.105ee67f.css",
-    "static/js/main.15c3fc2b.js"
+    "static/js/main.b4a7e795.js"
   ]
 }
