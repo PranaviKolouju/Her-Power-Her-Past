@@ -16,7 +16,7 @@ const BlogPost = () => {
       "That last item included in Ashley’s sack were three handfuls of pecans. While there were many foods that Rose could have sent with her daughter, the selection of pecans as a food source is rather interesting. As Miles contexualizes, “It was a delicacy deemed an ‘exotic import’ in antebellum South Carolina, second in exoticism only to almonds…access to pecans would have been limited in the Southeast” (Miles 195). Rose’s determination to acquire this preservable and nutritious food source amidst its difficulty speaks to her resolve of supplying her daughter with deluxe forms of sustenance. This can be a source of comfort, especially to a child who has been separated from her family and is facing the adversities of slavery. While the pecan’s would have been a fine source of short-term sustenance, they also carry cultural value. Miles explains how “Migrant children dislocated by sale slowly entered new circles of kin where a Black food culture reminiscent of Africa, influenced by Europe and reflective of Native America, succored cotton plantation communities” (Miles 216). Rose saw the pecans as a channel of cultural preservation. They were not only a source of temporary fuel but a means of culinary preparation that sustains the long-standing traditions of enslaved women.",
       "Through a tour of Ashley’s sack, we convey how the tale of slavery can be rewritten as a tale of motherhood, where enslaved mothers strive to provide protection to their children and use them as a vessel to pass forward their culture that is being threatened by the bondage of slavery. As we wrap up this discussion, I encourage you to think about the many alternative directions in which history can be rewritten, centering women and the lives they lived beyond the title of a slave. What roles did they play? What titles did they hold? How did these titles influence their actions and emotions? What contributions did they make to history that are unaccounted for in the archives of that time?"
     ],
-    citations: "Miles, Tiya. 2022. All That She Carried: The Journey of Ashley's Sack, a Black Family Keepsake. N.p.: Random House Publishing Group."
+    citations: ["Miles, Tiya. 2022. All That She Carried: The Journey of Ashley's Sack, a Black Family Keepsake. N.p.: Random House Publishing Group."]
   };
 
   return (
@@ -47,10 +47,16 @@ const BlogPost = () => {
             </Typography>
           ))}
 
-          {/* Citations */}
           <Typography variant="body1" className="post-citations">
-            Citations: {post.citations}
+            Citations
           </Typography>
+
+          {/* Citations */}
+          {post.citations.map((paragraph, index) => (
+            <Typography key={index} variant="body1" className="post-citations" paragraph>
+              {paragraph}
+            </Typography>
+          ))}
         </Box>
       </Container>
     </div>
