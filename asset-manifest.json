@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/Her-Power-Her-Past/static/css/main.ed77a1c3.css",
-    "main.js": "/Her-Power-Her-Past/static/js/main.b42f331f.js",
+    "main.js": "/Her-Power-Her-Past/static/js/main.2e80533d.js",
     "static/js/453.9b9b2bac.chunk.js": "/Her-Power-Her-Past/static/js/453.9b9b2bac.chunk.js",
     "static/media/background.png": "/Her-Power-Her-Past/static/media/background.c362d8bde6691907e488.png",
+    "static/media/housewives.png": "/Her-Power-Her-Past/static/media/housewives.3eeb47da2d8bd3eaafb5.png",
     "static/media/slavery.png": "/Her-Power-Her-Past/static/media/slavery.e4e99a18309edb21d0f1.png",
     "static/media/immigrationImage.jpg": "/Her-Power-Her-Past/static/media/immigrationImage.1bed6fd59e72ce81c879.jpg",
     "index.html": "/Her-Power-Her-Past/index.html",
     "main.ed77a1c3.css.map": "/Her-Power-Her-Past/static/css/main.ed77a1c3.css.map",
-    "main.b42f331f.js.map": "/Her-Power-Her-Past/static/js/main.b42f331f.js.map",
+    "main.2e80533d.js.map": "/Her-Power-Her-Past/static/js/main.2e80533d.js.map",
     "453.9b9b2bac.chunk.js.map": "/Her-Power-Her-Past/static/js/453.9b9b2bac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed77a1c3.css",
-    "static/js/main.b42f331f.js"
+    "static/js/main.2e80533d.js"
   ]
 }
