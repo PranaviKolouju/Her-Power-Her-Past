@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar';
 import { Link } from 'react-router-dom';
 import slaveryImage from '../Images/slavery.png';
 import immigrationImage from '../Images/immigrationImage.jpg';
+import housewivesImage from '../Images/housewives.png';
 import './Blogs.css';
 
 const Blogs = () => {
@@ -23,6 +24,13 @@ const Blogs = () => {
       description: 'She seeks what society tells her she cannot have.',
       image: immigrationImage,
       link: '/post2',
+    },
+    {
+      id: 3,
+      title: 'Redefining Her Power as a Housewife',
+      description: 'She pushes past the bounds of tradition to influence society and politics.',
+      image: housewivesImage,
+      link: '/post3',
     },
   ];
 
