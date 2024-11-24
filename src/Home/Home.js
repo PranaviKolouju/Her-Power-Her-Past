@@ -2,8 +2,28 @@ import React from 'react';
 import { Typography, Box, Container } from '@mui/material';
 import Navbar from '../Components/Navbar'; 
 import './Home.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import slavery from '../Images/slavery.png';
+import immigration from '../Images/immigrationImage.jpg';
+import housewives from '../Images/housewives.png';
+
 
 const Home = () => {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
+  const carouselImages = [slavery, immigration, housewives];
+
   return (
     <div className="home">
       {/* Navbar */}
@@ -26,6 +46,22 @@ const Home = () => {
             their lasting impact on our present. 
           </Typography>
         </Box>
+
+        {/* Carousel Section */}
+        <Box mt={4}>
+          <Slider {...settings}>
+            {carouselImages.map((image, index) => (
+              <Box key={index}>
+                <img
+                  src={image}
+                  alt={`Slide ${index + 1}`}
+                  style={{ width: '100%', height: 'auto', borderRadius: '10px', objectFit: 'cover' }}
+                />
+              </Box>
+            ))}
+          </Slider>
+        </Box>
+
       </Container>
     </div>
   );

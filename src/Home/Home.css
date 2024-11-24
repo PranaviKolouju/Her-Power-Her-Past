@@ -55,3 +55,11 @@ body {
     font-size: 0.875rem; 
   }
 }
+
+.slick-dots li button:before {
+  color: #555; 
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;
+}
