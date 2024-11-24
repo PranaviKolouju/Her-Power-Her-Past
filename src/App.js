@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import Blogs from './Blogs/Blogs';
 import Post1 from './Posts/Post1/Post1';
 import Post2 from './Posts/Post2/Post2'
+import Post3 from './Posts/Post3/Post3';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />   {/* Blogs Route */}
           <Route path="/post1" element={<Post1 />} />  {/* Specific Post Route */}
           <Route path="/post2" element={<Post2 />} />  {/* Specific Post Route */}
+          <Route path="/post3" element={<Post3 />} />  {/* Specific Post Route */}
         </Routes>
       </div>
     </Router>
