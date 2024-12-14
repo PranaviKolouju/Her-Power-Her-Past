@@ -2,9 +2,11 @@ import React from 'react';
 import { Typography, Box, Container} from '@mui/material';
 import Navbar from '../../Components/Navbar';
 import './Post3.css';
+import { DiscussionEmbed } from 'disqus-react';
 
 const BlogPost3 = () => {
   const post = {
+    id: 0o3,
     title: "Redefining Her Power as a Housewife",
     description: "She pushes past the bounds of tradition to influence society and politics.",
     date: "November 24, 2024",
@@ -18,6 +20,13 @@ const BlogPost3 = () => {
     ]
     ,
     citations: ['Horowitz, Daniel. 2019. “Betty Friedan and the Origins of Feminism in Cold War America.” In Women\'s America: Refocusing the Past, edited by Linda K. Kerber, Jane S. De Hart, Cornelia H. Dayton, and Karissa Haugeberg, 688. 9th ed. N.p.: Oxford University Press.', 'Nickerson, Michelle M. 2019. “Politically Desperate Housewives.” In Women\'s America: Refocusing the Past, edited by Linda K. Kerber, Jane S. De Hart, Cornelia H. Dayton, and Karissa Haugeberg, 688. 9th ed. N.p.: Oxford University Press.']
+  };
+
+  const disqusConfig = {
+    url: window.location.href,
+    identifier: post.id, // Unique identifier for each post
+    title: post.title,
+    language: 'en' // Set Disqus UI to English
   };
 
   return (
@@ -60,6 +69,14 @@ const BlogPost3 = () => {
           ))}
         </Box>
       </Container>
+
+      <div className="disqus-container">
+          <DiscussionEmbed
+              shortname="https-pranavikolouju-github-io-her-power-her-past"
+              config={disqusConfig}
+          />
+      </div>
+
     </div>
   );
 };

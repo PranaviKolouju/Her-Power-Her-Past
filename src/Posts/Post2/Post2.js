@@ -2,9 +2,11 @@ import React from 'react';
 import { Typography, Box, Container} from '@mui/material';
 import Navbar from '../../Components/Navbar';
 import './Post2.css';
+import { DiscussionEmbed } from 'disqus-react';
 
 const BlogPost2 = () => {
   const post = {
+    id: 0o2,
     title: "Her Search for Autonomy in The New World",
     description: "She seeks what society tells her she cannot have.",
     date: "October 26, 2024",
@@ -16,6 +18,13 @@ const BlogPost2 = () => {
       "And so, we have explored the ways in which women in the new world have sought out opportunities to break away from barriers that constrained them on the basis of gender. Many overcame challenges and instead found ways to empower themselves. These acts gave them more control over their lives across various sectors and also granted them improved status within society. They didn’t simply adapt to the new world, they worked towards gaining freedom and choice. What are other ways in which women of the new world progressed? What other methods they used to overcome traditional gender norms? What tools enabled them to earn this newfound freedom? While we acknowledge that many women were still held back by societal impositions, it is important to commemorate the progress of women in the new world."
     ],
     citations: ['Yung, Judy. 2019. “Unbound Feet: From China to San Francisco’s Chinatown.” In Women\'s America: Refocusing the Past, edited by Linda K. Kerber, Jane S. De Hart, Cornelia H. Dayton, and Karissa Haugeberg, 688. 9th ed. N.p.: Oxford University Press.', 'Ruiz, Vicki L. 2019. “The Flapper and the Chaperone: Mexican American Teenagers in the Southwest.” In Women\'s America: Refocusing the Past, edited by Linda K. Kerber, Jane S. De Hart, Cornelia H. Dayton, and Karissa Haugeberg, 688. 9th ed. N.p.: Oxford University Press.']
+  };
+
+  const disqusConfig = {
+    url: window.location.href,
+    identifier: post.id, // Unique identifier for each post
+    title: post.title,
+    language: 'en' // Set Disqus UI to English
   };
 
   return (
@@ -58,6 +67,14 @@ const BlogPost2 = () => {
           ))}
         </Box>
       </Container>
+
+      <div className="disqus-container">
+          <DiscussionEmbed
+              shortname="https-pranavikolouju-github-io-her-power-her-past"
+              config={disqusConfig}
+          />
+      </div>
+
     </div>
   );
 };

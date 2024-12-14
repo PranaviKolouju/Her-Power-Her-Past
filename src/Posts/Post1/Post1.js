@@ -2,9 +2,11 @@ import React from 'react';
 import { Typography, Box, Container} from '@mui/material';
 import Navbar from '../../Components/Navbar';
 import './Post1.css';
+import { DiscussionEmbed } from 'disqus-react';
 
 const BlogPost = () => {
   const post = {
+    id: 0o1,
     title: "Her Ties to Motherhood",
     description: "The lives of enslaved women rewritten in the frame of motherhood.",
     date: "September 28, 2024",
@@ -17,6 +19,13 @@ const BlogPost = () => {
       "Through a tour of Ashley’s sack, we convey how the tale of slavery can be rewritten as a tale of motherhood, where enslaved mothers strive to provide protection to their children and use them as a vessel to pass forward their culture that is being threatened by the bondage of slavery. As we wrap up this discussion, I encourage you to think about the many alternative directions in which history can be rewritten, centering women and the lives they lived beyond the title of a slave. What roles did they play? What titles did they hold? How did these titles influence their actions and emotions? What contributions did they make to history that are unaccounted for in the archives of that time?"
     ],
     citations: ["Miles, Tiya. 2022. All That She Carried: The Journey of Ashley's Sack, a Black Family Keepsake. N.p.: Random House Publishing Group."]
+  };
+
+  const disqusConfig = {
+    url: window.location.href,
+    identifier: post.id, // Unique identifier for each post
+    title: post.title,
+    language: 'en' // Set Disqus UI to English
   };
 
   return (
@@ -59,6 +68,14 @@ const BlogPost = () => {
           ))}
         </Box>
       </Container>
+
+      <div className="disqus-container">
+          <DiscussionEmbed
+              shortname="https-pranavikolouju-github-io-her-power-her-past"
+              config={disqusConfig}
+          />
+      </div>
+      
     </div>
   );
 };
