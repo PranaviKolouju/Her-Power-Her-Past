@@ -20,7 +20,7 @@ const Blogs = () => {
     },
     {
       id: 2,
-      title: 'Her Search for Autonomy in The New World',
+      title: 'Her Search for Autonomy on American Soil',
       description: 'She seeks what society tells her she cannot have.',
       image: immigrationImage,
       link: '/post2',
